@@ -1,0 +1,11 @@
+test case
+1. positive test - login
+2. negative test - login (wrong username & password)
+
+step :
+1. open application
+2. click sign in buttin
+3. input username (valid)
+4. input passsword (valid password)
+5. click button sign in
+6. close application
