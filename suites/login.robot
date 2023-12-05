@@ -12,17 +12,28 @@ ${INVALID_PASSWORD}    invalid
 
 *** Test Cases ***
 Login Valid Credential
-    # Open Flight Application
     Click Sign In Button on Home Page
     Input Username on login Page    ${VALID_USERNAME}
     Input Password on Login Page    ${VALID_PASSWORD}
     Click Sign In Button on Login Page
-    # Close Flight Application
+    Direct to Main Home Tab
+   
 
 Login Invalid Credential
-    # Open Flight Application
     Click Sign In Button on Home Page
     Input Username on login Page    ${INVALID_USERNAME}
     Input Password on Login Page    ${INVALID_PASSWORD}
     Click Sign In Button on Login Page
-    # Close Flight Application
+    Invalid Notification
+
+Login Invalid Empty Username
+    Click Sign In Button on Home Page
+    Input Password on Login Page    ${VALID_PASSWORD}
+    Click Sign In Button on Login Page
+    Invalid Notification
+
+Login Invalid Empty Password
+    Click Sign In Button on Home Page
+    Input Username on login Page    ${VALID_USERNAME}
+    Click Sign In Button on Login Page
+    Invalid Notification
