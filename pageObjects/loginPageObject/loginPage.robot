@@ -36,3 +36,6 @@ Invalid Notification
 Login Successfully 
     Wait Until Page Does Not Contain Element    ${username-input}
     Wait Until Page Does Not Contain Element    ${password-input}
+
+Direct to Main Home Tab
+    Wait Until Page Contains Element    ${main-home-tab}
