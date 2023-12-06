@@ -1,5 +1,5 @@
 *** Settings ***
-Resource        ../baseRealDevice.robot
+Resource        ../base/baseRealDevice.robot
 Variables       search-locator.yaml
 
 *** Keywords ***
